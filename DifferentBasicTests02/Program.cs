@@ -6,6 +6,13 @@ namespace DifferentBasicTests02
     {
         static void Main(string[] args)
         {
+            //Test14 From Celsius to Fahrenheit
+            Console.Write("\nEnter the amount of celsius: ");
+            int celsius = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Kelvin = " + (celsius + 273));
+            Console.WriteLine("Fahrenheit = " + (celsius * 18 / 10 + 32));
+
             //Test12
             int num;
             Console.WriteLine("Enter a digit: ");
