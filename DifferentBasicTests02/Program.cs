@@ -6,7 +6,17 @@ namespace DifferentBasicTests02
     {
         static void Main(string[] args)
         {
-            //Test2
+            //Test10
+            Console.Write("\n First number: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\n Second number: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\n Third number: ");
+            int z = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Produces: " + ((x + y) * z) + " & " + (x*y + y*z));
+
+            //Test9
             Console.Write("\n First number: ");
             int first = Convert.ToInt32(Console.ReadLine());
             Console.Write("\n Second number: ");
@@ -19,12 +29,12 @@ namespace DifferentBasicTests02
             Console.WriteLine("\n" + "The average of " + first + " & " + second + " & " + third + " & " + fourth + " = " +
                               ((first + second + third + fourth)/4) + "\n");
 
-            //Test1
+            //Test8 from https://www.w3resource.com/csharp-exercises/basic/index.php
             Console.WriteLine("Enter a number you like to see multiplied: ");
             int numbr1 = Convert.ToInt32(Console.ReadLine());
-            int x = 11;
+            int l = 11;
 
-            for (int i = 0; i < x; i++)
+            for (int i = 0; i < l; i++)
             {
                 Console.WriteLine("\n"+numbr1 + " x " + i + " = " + (numbr1*i));
             }
