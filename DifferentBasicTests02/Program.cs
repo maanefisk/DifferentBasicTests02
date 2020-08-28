@@ -6,6 +6,12 @@ namespace DifferentBasicTests02
     {
         static void Main(string[] args)
         {
+            //Test15 Removing specific chosen character
+            Console.WriteLine("Here are some tree's with removed character");
+            Console.WriteLine(removeChar("Pine",3));
+            Console.WriteLine(removeChar("Firr", 1));
+            Console.WriteLine(removeChar("Baobab", 4));
+
             //Test14 From Celsius to Fahrenheit
             Console.Write("\nEnter the amount of celsius: ");
             int celsius = Convert.ToInt32(Console.ReadLine());
@@ -56,6 +62,11 @@ namespace DifferentBasicTests02
             {
                 Console.WriteLine("\n"+numbr1 + " x " + i + " = " + (numbr1*i));
             }
+        }
+
+        public static string removeChar(string treetype, int numberofcharactertoremove)
+        {
+            return treetype.Remove(numberofcharactertoremove, 1);
         }
     }
 }
