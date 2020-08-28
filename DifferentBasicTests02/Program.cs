@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace DifferentBasicTests02
 {
@@ -6,6 +8,11 @@ namespace DifferentBasicTests02
     {
         static void Main(string[] args)
         {
+            //Test16 Switching out last and first character
+            Console.Write("\nWrite a word: ");
+            string aWord = Console.ReadLine();
+            Console.WriteLine(changeChar(aWord)+"\n");
+
             //Test15 Removing specific chosen character
             Console.WriteLine("Here are some tree's with removed character");
             Console.WriteLine(removeChar("Pine",3));
@@ -67,6 +74,13 @@ namespace DifferentBasicTests02
         public static string removeChar(string treetype, int numberofcharactertoremove)
         {
             return treetype.Remove(numberofcharactertoremove, 1);
+        }
+
+        public static string changeChar(string userInputWord)
+        {
+            
+            return userInputWord.Length > 1
+                ? userInputWord.Substring(userInputWord.Length - 1) + userInputWord.Substring(1, userInputWord.Length - 2) + userInputWord.Substring(0, 1) : userInputWord;
         }
     }
 }
