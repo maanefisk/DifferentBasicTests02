@@ -6,6 +6,12 @@ namespace DifferentBasicTests02
     {
         static void Main(string[] args)
         {
+            //Test12
+            int num;
+            Console.WriteLine("Enter a digit: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("{0} {0} {0} {0}", num);
+
             //Test11
             Console.WriteLine("What is your age?");
             int userage = Convert.ToInt32(Console.ReadLine());
