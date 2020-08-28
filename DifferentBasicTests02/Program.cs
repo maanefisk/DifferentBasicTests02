@@ -6,6 +6,11 @@ namespace DifferentBasicTests02
     {
         static void Main(string[] args)
         {
+            //Test11
+            Console.WriteLine("What is your age?");
+            int userage = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("You are "+ userage +"years young \n");
+
             //Test10
             Console.Write("\n First number: ");
             int x = Convert.ToInt32(Console.ReadLine());
