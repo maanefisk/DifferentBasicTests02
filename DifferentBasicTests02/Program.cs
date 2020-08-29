@@ -8,7 +8,7 @@ namespace DifferentBasicTests02
     {
         static void Main(string[] args)
         {
-            //Test17 Checking if int is - or +
+            //Test18 Checking if int is - or +
             Console.Write("\nInteger one: ");
             int intOne = Convert.ToInt32(Console.ReadLine());
             Console.Write("\nInteger two: ");
