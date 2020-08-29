@@ -8,6 +8,14 @@ namespace DifferentBasicTests02
     {
         static void Main(string[] args)
         {
+            //Test17 Checking if int is - or +
+            Console.Write("\nInteger one: ");
+            int intOne = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nInteger two: ");
+            int intTwo = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("\nOne of the numbers are minus and the other is plus = " + plusAndMinus(intOne,intTwo) + " statement!");
+
             //Test16 Switching out last and first character
             Console.Write("\nWrite a word: ");
             string aWord = Console.ReadLine();
@@ -71,6 +79,17 @@ namespace DifferentBasicTests02
             }
         }
 
+        public static bool plusAndMinus(int userInputOne, int userInputTwo)
+        {
+            if ((userInputOne < 0 && userInputTwo > 0) || (userInputTwo < 0 && userInputOne > 0))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         public static string removeChar(string treetype, int numberofcharactertoremove)
         {
             return treetype.Remove(numberofcharactertoremove, 1);
