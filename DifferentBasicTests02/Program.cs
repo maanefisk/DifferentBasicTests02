@@ -16,6 +16,14 @@ namespace DifferentBasicTests02
 
             Console.WriteLine("\nOne of the numbers are minus and the other is plus = " + plusAndMinus(intOne,intTwo) + " statement!");
 
+            //Alternative way of doing this:
+            Console.WriteLine("\nInput first integer:");
+            int v = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input second integer:");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Check if one is negative and one is positive:");
+            Console.WriteLine((v < 0 && b > 0) || (v > 0 && b < 0));
+
             //Test16 Switching out last and first character
             Console.Write("\nWrite a word: ");
             string aWord = Console.ReadLine();
